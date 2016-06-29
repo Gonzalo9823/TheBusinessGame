@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "BriefCase.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "flecha@2x.png",
       "scale" : "2x"
     },
     {

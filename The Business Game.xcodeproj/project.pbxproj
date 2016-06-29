@@ -19,6 +19,7 @@
 		EA487C1D1D21B1BC007FD13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA487C1B1D21B1BC007FD13F /* LaunchScreen.storyboard */; };
 		EA487C281D21B1BC007FD13F /* MioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA487C271D21B1BC007FD13F /* MioTests.swift */; };
 		EA487C331D21B1BC007FD13F /* MioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA487C321D21B1BC007FD13F /* MioUITests.swift */; };
+		EA7DD45C1D248EE20066DDBE /* Menu.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA7DD45B1D248EE20066DDBE /* Menu.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		EA487C2E1D21B1BC007FD13F /* The Business Game.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Business Game.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA487C321D21B1BC007FD13F /* MioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MioUITests.swift; sourceTree = "<group>"; };
 		EA487C341D21B1BC007FD13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7DD45B1D248EE20066DDBE /* Menu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Menu.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				EA487C101D21B1BC007FD13F /* GameScene1.sks */,
+				EA7DD45B1D248EE20066DDBE /* Menu.sks */,
 			);
 			name = SKS;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7DD45C1D248EE20066DDBE /* Menu.sks in Resources */,
 				EA487C111D21B1BC007FD13F /* GameScene1.sks in Resources */,
 				EA487C1D1D21B1BC007FD13F /* LaunchScreen.storyboard in Resources */,
 				EA487C1A1D21B1BC007FD13F /* Assets.xcassets in Resources */,
