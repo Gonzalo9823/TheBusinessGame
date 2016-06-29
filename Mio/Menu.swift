@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-class GameScene2: SKScene {
+class Menu : SKScene {
     
     
     override func didMoveToView(view: SKView) {
