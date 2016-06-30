@@ -12,16 +12,21 @@ class GameScene1: SKScene {
     
     var rightButton: MSButtonNode!
     var leftButton: MSButtonNode!
+    var botonMenu: MSButtonNode!
     var moverDerecha = SKAction(named: "MoverDerecha")!
     var moverIzquierda = SKAction(named: "MoverIzquierda")!
+    var menuNode:  SKNode!
+    
     enum Espacio {
         case Principal, Derecho, Izquierdo
     }
+    
     var estadoActual: Espacio = .Principal
     
     override func didMoveToView(view: SKView) {
         rightButton = childNodeWithName("//rightButton") as! MSButtonNode
         leftButton = childNodeWithName("//leftButton") as! MSButtonNode
+        botonMenu = childNodeWithName("//botonMenu") as! MSButtonNode
         
         rightButton.selectedHandler = {
             if self.estadoActual == .Principal {
@@ -38,7 +43,7 @@ class GameScene1: SKScene {
         leftButton.selectedHandler = {
             if self.estadoActual == .Principal {
                 self.camera?.runAction(self.moverIzquierda)
-
+                
                 self.estadoActual = .Izquierdo
             }
             else if self.estadoActual == .Derecho {
@@ -46,6 +51,18 @@ class GameScene1: SKScene {
                 self.estadoActual = .Principal
             }
         }
+        
+        botonMenu.selectedHandler = {
+            
+            self.menuNode = self.childNodeWithName("//menuNode")
+            let resourcePath = NSBundle.mainBundle().pathForResource("Menu", ofType: "sks")
+            let mostrarMenu = SKReferenceNode (URL: NSURL (fileURLWithPath: resourcePath!))
+            self.menuNode.addChild(mostrarMenu)
+            
+        }
+        
+        
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
