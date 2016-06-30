@@ -10,7 +10,7 @@
 		EA0D87F61D21B455004167E7 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D87F51D21B455004167E7 /* MSButtonNode.swift */; };
 		EA0D87F81D21C0CF004167E7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D87F71D21C0CF004167E7 /* Menu.swift */; };
 		EA0D87FA1D21C121004167E7 /* GameScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D87F91D21C121004167E7 /* GameScene1.swift */; };
-		EA0D88021D21D28E004167E7 /* Efectos.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA0D88011D21D28E004167E7 /* Efectos.sks */; };
+		EA0D88021D21D28E004167E7 /* Movimientos.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA0D88011D21D28E004167E7 /* Movimientos.sks */; };
 		EA487C0F1D21B1BC007FD13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA487C0E1D21B1BC007FD13F /* AppDelegate.swift */; };
 		EA487C111D21B1BC007FD13F /* GameScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA487C101D21B1BC007FD13F /* GameScene1.sks */; };
 		EA487C151D21B1BC007FD13F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA487C141D21B1BC007FD13F /* GameViewController.swift */; };
@@ -43,7 +43,7 @@
 		EA0D87F51D21B455004167E7 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		EA0D87F71D21C0CF004167E7 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		EA0D87F91D21C121004167E7 /* GameScene1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene1.swift; sourceTree = "<group>"; };
-		EA0D88011D21D28E004167E7 /* Efectos.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Efectos.sks; path = ../Efectos.sks; sourceTree = "<group>"; };
+		EA0D88011D21D28E004167E7 /* Movimientos.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Movimientos.sks; path = ../Movimientos.sks; sourceTree = "<group>"; };
 		EA487C0B1D21B1BC007FD13F /* The Business Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Business Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA487C0E1D21B1BC007FD13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA487C101D21B1BC007FD13F /* GameScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene1.sks; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				EA487C191D21B1BC007FD13F /* Assets.xcassets */,
 				EA487C1B1D21B1BC007FD13F /* LaunchScreen.storyboard */,
 				EA487C1E1D21B1BC007FD13F /* Info.plist */,
-				EA0D88011D21D28E004167E7 /* Efectos.sks */,
+				EA0D88011D21D28E004167E7 /* Movimientos.sks */,
 				EA0D87F51D21B455004167E7 /* MSButtonNode.swift */,
 			);
 			path = Mio;
@@ -271,7 +271,7 @@
 				EA487C1D1D21B1BC007FD13F /* LaunchScreen.storyboard in Resources */,
 				EA487C1A1D21B1BC007FD13F /* Assets.xcassets in Resources */,
 				EA487C181D21B1BC007FD13F /* Main.storyboard in Resources */,
-				EA0D88021D21D28E004167E7 /* Efectos.sks in Resources */,
+				EA0D88021D21D28E004167E7 /* Movimientos.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,9 @@ class GameScene1: SKScene {
     var moverDerecha = SKAction(named: "MoverDerecha")!
     var moverIzquierda = SKAction(named: "MoverIzquierda")!
     var menuNode:  SKNode!
+    var moneyLabel: SKLabelNode!
     var paraSaberSiBajaOSube = true
+    var money = 10
     
     enum Espacio {
         case Principal, Derecho, Izquierdo
@@ -28,6 +30,7 @@ class GameScene1: SKScene {
         rightButton = childNodeWithName("//rightButton") as! MSButtonNode
         leftButton = childNodeWithName("//leftButton") as! MSButtonNode
         botonMenu = childNodeWithName("//botonMenu") as! MSButtonNode
+        moneyLabel = childNodeWithName("//moneyLabel") as! SKLabelNode
         
         rightButton.selectedHandler = {
             if self.estadoActual == .Principal {
@@ -71,6 +74,7 @@ class GameScene1: SKScene {
             
         }
         
+        moneyLabel.text = "\(money)K"
         
     }
     
@@ -92,11 +96,13 @@ class GameScene1: SKScene {
         if subirObajar {
             let moverse = SKAction(named: "subirMenuPrincipal")
             self.menuNode.runAction(moverse!)
+            self.botonMenu.texture = SKTexture(imageNamed: "BriefCaseOpen")
             paraSaberSiBajaOSube = false
         } else {
             let moverse = SKAction(named: "bajarMenuPrincipal")
             self.menuNode.runAction(moverse!)
             paraSaberSiBajaOSube = true
+            self.botonMenu.texture = SKTexture(imageNamed: "BriefCase")
         }
     }
     func subirDerecho(subirOBajar: Bool) {
@@ -110,10 +116,12 @@ class GameScene1: SKScene {
         if subirOBajar {
             let moverse = SKAction(named: "subirMenuDerecha")
             self.menuNode.runAction(moverse!)
+            self.botonMenu.texture = SKTexture(imageNamed: "BriefCaseOpen")
             paraSaberSiBajaOSube = false
         } else {
             let moverse = SKAction(named: "bajarMenuDerecha")
             self.menuNode.runAction(moverse!)
+            self.botonMenu.texture = SKTexture(imageNamed: "BriefCase")
             paraSaberSiBajaOSube = true
         }
     }
@@ -128,10 +136,12 @@ class GameScene1: SKScene {
         if subirObajar {
             let moverse = SKAction(named: "subirMenuIzquierdo")
             self.menuNode.runAction(moverse!)
+            self.botonMenu.texture = SKTexture(imageNamed: "BriefCaseOpen")
             paraSaberSiBajaOSube = false
         } else {
             let moverse = SKAction(named: "bajarMenuIzquierdo")
             self.menuNode.runAction(moverse!)
+            self.botonMenu.texture = SKTexture(imageNamed: "BriefCase")
             paraSaberSiBajaOSube = true
         }
     }
