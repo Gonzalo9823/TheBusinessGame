@@ -52,14 +52,28 @@ class GameScene1: SKScene {
             }
         }
         
+        var paraSaberSiBajaOSube = true
         botonMenu.selectedHandler = {
             
-            self.menuNode = self.childNodeWithName("//menuNode")
-            let resourcePath = NSBundle.mainBundle().pathForResource("Menu", ofType: "sks")
-            let mostrarMenu = SKReferenceNode (URL: NSURL (fileURLWithPath: resourcePath!))
-            self.menuNode.addChild(mostrarMenu)
             
+            
+            if paraSaberSiBajaOSube {
+                
+                let moverse = SKAction(named: "moverMenuOptions")
+                self.menuNode.runAction(moverse!)
+                paraSaberSiBajaOSube = false
+            }else {
+                
+                let moverse = SKAction(named: "1")
+                self.menuNode.runAction(moverse!)
+                paraSaberSiBajaOSube = true
+            }
         }
+        
+        self.menuNode = self.childNodeWithName("//menuNode")
+        let resourcePath = NSBundle.mainBundle().pathForResource("Menu", ofType: "sks")
+        let mostrarMenu = SKReferenceNode (URL: NSURL (fileURLWithPath: resourcePath!))
+        self.menuNode.addChild(mostrarMenu)
         
         
         
