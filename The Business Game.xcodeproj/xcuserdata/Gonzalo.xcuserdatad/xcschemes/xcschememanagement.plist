@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Mio.xcscheme</key>
+		<key>LoginScreen.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EA487C0A1D21B1BC007FD13F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA487C221D21B1BC007FD13F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA487C2D1D21B1BC007FD13F</key>
+		<key>EA5FE4131D259B93001ECD48</key>
 		<dict>
 			<key>primary</key>
 			<true/>
